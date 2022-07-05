@@ -4,7 +4,5 @@ services:
     build:
       context: prestashop17
     container_name: prestashop17_app
-    volumes:
-      - ./phppsinfo.php:/var/www/project/index.php
-    ports:
-      - 90:80
+#    ports:
+#      - ${API_PORT}:80
