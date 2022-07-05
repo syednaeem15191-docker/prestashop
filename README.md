@@ -1,11 +1,11 @@
-# Prestashop
+# lumen
 
 #### `docker login -u ${DOCKER_USERNAME} -p ${DOCKER_PASSWORD}`
 
-##### push lumen 9
-* `docker-compose up --build -d prestashop1`
-* `docker tag lumen_lumen9 syednaeem15191/prestashop1`
-* `docker push syednaeem15191/prestashop1`
-* `docker tag lumen_lumen8 syednaeem15191/prestashop1`
-* `docker push syednaeem15191/prestashop1`
+##### push prestashop 1.7
+* `docker-compose up --build -d prestashop17`
+* `docker tag prestashop_prestashop17 syednaeem15191/prestashop:1.7`
+* `docker push syednaeem15191/prestashop:1.7`
+* `docker tag prestashop_prestashop17 syednaeem15191/prestashop:latest`
+* `docker push syednaeem15191/prestashop:latest`
 * `docker-compose stop`
