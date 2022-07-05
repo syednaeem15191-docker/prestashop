@@ -48,9 +48,9 @@ jobs:
           name: Publishing image
           command: |
             docker tag project_prestashop17 ${DOCKER_USERNAME}/prestashop:1.7
-            docker tag project_prestashop17 ${DOCKER_USERNAME}/Prestashop:latest
+            docker tag project_prestashop17 ${DOCKER_USERNAME}/prestashop:latest
             docker push ${DOCKER_USERNAME}/prestashop:1.7
-            docker push ${DOCKER_USERNAME}/Prestashop:latest
+            docker push ${DOCKER_USERNAME}/prestashop:latest
       - run:
           name: Remove dangling images
           command: docker image prune -a -f
